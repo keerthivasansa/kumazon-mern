@@ -17,6 +17,10 @@ const CategoryProduct = () => {
       urlCategoryListObject[el] = true
     })
 
+    useEffect(() => {
+      document.title = 'Category: ' + urlCategoryListinArray[0]
+    }, [urlCategoryListinArray])
+
     const [selectCategory,setSelectCategory] = useState(urlCategoryListObject)
     const [filterCategoryList,setFilterCategoryList] = useState([])
 

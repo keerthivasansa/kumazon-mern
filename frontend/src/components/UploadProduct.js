@@ -43,7 +43,7 @@ const UploadProduct = ({
     setData((preve)=>{
       return{
         ...preve,
-        productImage : [ ...preve.productImage, uploadImageCloudinary.url]
+        productImage : [ uploadImageCloudinary.url ]
       }
     })
   }

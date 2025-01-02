@@ -53,6 +53,10 @@ const ProductDetails = () => {
 
   }
 
+  useEffect(() => {
+    document.title = `${data.productName} | Buy online`;
+  }, [data])
+
   console.log("data",data)
 
   useEffect(()=>{
